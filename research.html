@@ -1,15 +1,11 @@
 ---
 layout: default
-title: Research Projects
+title: Chatbot
 ---
 
-<div class="card-columns">
-    {% comment %}
-    Sort the projects by date, putting those without dates last
-    {% endcomment %}
-    {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
-    {% assign projects_by_date = projects_by_date | reverse %}
-    {% for p in projects_by_date %}
-        {% include project-card.html project=p %}
-    {% endfor %}
-</div>
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/4.41.0/gradio.js"
+></script>
+
+<gradio-app src="https://wolong6336-First.hf.space" theme_mode="light"></gradio-app>
