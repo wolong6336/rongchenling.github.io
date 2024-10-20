@@ -3,20 +3,10 @@ url: https://wolong6336.github.io/
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
-# colorize code snippets with the pygments module
-highlighter: pygments
-
 # Base pathname for links.
 base: ''
-
-# make pages for the _projects folder
-collections:
-  projects:
-    output: true
 
 # Navigation bar links.
 navigation:
   - title: Home
     link: /
-  - title: Chatbot
-    link: research.html
